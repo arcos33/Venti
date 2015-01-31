@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomePageViewController">
             <connections>
                 <outlet property="mapView" destination="e2a-xa-1lF" id="WRB-ne-7aN"/>
+                <outlet property="radioButton" destination="cPs-tF-0Z0" id="DZ5-MS-tgF"/>
                 <outlet property="shortcutsView" destination="i3i-nl-lye" id="E6C-Hj-WyC"/>
                 <outlet property="view" destination="iN0-l3-epB" id="U1x-eY-Eqf"/>
             </connections>
@@ -58,16 +59,6 @@
                     <state key="normal" backgroundImage="services_icon">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                </button>
-                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAx-yR-kcI" customClass="DLRadioButton">
-                    <rect key="frame" x="25" y="214" width="50" height="50"/>
-                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="radioButtonPressed:" destination="-1" eventType="touchUpInside" id="BAJ-XF-tKT"/>
-                    </connections>
                 </button>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T4d-N1-coq">
                     <rect key="frame" x="359" y="723" width="409" height="298"/>
@@ -135,16 +126,28 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLa-4u-C6Q" customClass="DLRadioButton">
-                    <rect key="frame" x="25" y="332" width="50" height="50"/>
-                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal">
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPs-tF-0Z0" customClass="RadioButton">
+                    <rect key="frame" x="39" y="218" width="24" height="24"/>
+                    <state key="normal" image="checked">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="radioButtonPressed:" destination="-1" eventType="touchUpInside" id="1Ij-IZ-jef"/>
-                        <outletCollection property="otherButtons" destination="nAx-yR-kcI" id="idU-WS-K8E"/>
-                        <outletCollection property="otherButtons" destination="nAx-yR-kcI" id="kN1-tN-zGg"/>
+                        <outletCollection property="groupButtons" destination="3aP-1m-x48" id="c43-8k-i6i"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoA-kd-YLT" customClass="RadioButton">
+                    <rect key="frame" x="39" y="478" width="24" height="24"/>
+                    <state key="normal" title="Button 3" image="checked">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aP-1m-x48" customClass="RadioButton">
+                    <rect key="frame" x="39" y="340" width="24" height="24"/>
+                    <state key="normal" image="checked">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <outletCollection property="groupButtons" destination="aoA-kd-YLT" id="KUH-do-ntP"/>
                     </connections>
                 </button>
             </subviews>
@@ -178,6 +181,7 @@
     </objects>
     <resources>
         <image name="appointments_icon" width="256" height="227"/>
+        <image name="checked" width="24" height="24"/>
         <image name="cleaning_supplies" width="460" height="288"/>
         <image name="create_user" width="256" height="316"/>
         <image name="follow_up_icon" width="101" height="101"/>

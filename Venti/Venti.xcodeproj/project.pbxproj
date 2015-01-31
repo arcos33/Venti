@@ -37,6 +37,8 @@
 		60BE478E1A26F6480047ABB7 /* Knock_Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BE478D1A26F6480047ABB7 /* Knock_Event.m */; };
 		60BE47911A27148F0047ABB7 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BE47901A27148F0047ABB7 /* CoreDataManager.m */; };
 		60CE7EC41A149A530087541E /* Mark Simonson - Proxima Nova Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60CE7EC31A149A530087541E /* Mark Simonson - Proxima Nova Regular.otf */; };
+		60D429581A7CC859007D4FB5 /* CustomerSnapshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D429561A7CC859007D4FB5 /* CustomerSnapshotViewController.m */; };
+		60D429591A7CC859007D4FB5 /* CustomerSnapshotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60D429571A7CC859007D4FB5 /* CustomerSnapshotViewController.xib */; };
 		FAC0A8A80E9B9CE7C481C4FB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 683544C1DE51DDBB665C8E33 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +95,9 @@
 		60BE478F1A27148F0047ABB7 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
 		60BE47901A27148F0047ABB7 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		60CE7EC31A149A530087541E /* Mark Simonson - Proxima Nova Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Regular.otf"; sourceTree = "<group>"; };
+		60D429551A7CC859007D4FB5 /* CustomerSnapshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerSnapshotViewController.h; sourceTree = "<group>"; };
+		60D429561A7CC859007D4FB5 /* CustomerSnapshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerSnapshotViewController.m; sourceTree = "<group>"; };
+		60D429571A7CC859007D4FB5 /* CustomerSnapshotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerSnapshotViewController.xib; sourceTree = "<group>"; };
 		683544C1DE51DDBB665C8E33 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0572FB036AC4899ED4ED73D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E4E589D397327CD05CC81D1C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +139,9 @@
 			children = (
 				60BDADA51A0B45660042FF22 /* HomePageViewController.h */,
 				60BDADA61A0B45660042FF22 /* HomePageViewController.m */,
+				60D429551A7CC859007D4FB5 /* CustomerSnapshotViewController.h */,
+				60D429561A7CC859007D4FB5 /* CustomerSnapshotViewController.m */,
+				60D429571A7CC859007D4FB5 /* CustomerSnapshotViewController.xib */,
 				6002EE011A74AAC3004BFA4E /* HomePageViewController.xib */,
 				6002EDFC1A749F63004BFA4E /* MapViewController.h */,
 				6002EDFD1A749F63004BFA4E /* MapViewController.m */,
@@ -379,6 +387,7 @@
 				60994BA41A2B716D00BB8D38 /* Images.xcassets in Resources */,
 				60BDAD901A0B42640042FF22 /* LaunchScreen.xib in Resources */,
 				60994BA31A2B099900BB8D38 /* ForgotPasswordViewController.xib in Resources */,
+				60D429591A7CC859007D4FB5 /* CustomerSnapshotViewController.xib in Resources */,
 				6002EE001A749F63004BFA4E /* MapViewController.xib in Resources */,
 				60994B9E1A2AE69D00BB8D38 /* RegistrationViewController.xib in Resources */,
 				60CE7EC41A149A530087541E /* Mark Simonson - Proxima Nova Regular.otf in Resources */,
@@ -433,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60BDAD851A0B42640042FF22 /* Venti.xcdatamodeld in Sources */,
+				60D429581A7CC859007D4FB5 /* CustomerSnapshotViewController.m in Sources */,
 				60994B9D1A2AE69D00BB8D38 /* RegistrationViewController.m in Sources */,
 				60BE47911A27148F0047ABB7 /* CoreDataManager.m in Sources */,
 				60BDAD821A0B42640042FF22 /* AppDelegate.m in Sources */,

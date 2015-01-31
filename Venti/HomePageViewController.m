@@ -32,12 +32,12 @@
 
 
 - (void)viewDidLoad {
-     _button1_IS_pressed = NO;
-
-//    for (DLRadioButton *radioButton in otherButtonsArray)
-//    {
-//        NSLog(@"radio button = %@", radioButton);
-//    }
+    _button1_IS_pressed = NO;
+    
+    //    for (DLRadioButton *radioButton in otherButtonsArray)
+    //    {
+    //        NSLog(@"radio button = %@", radioButton);
+    //    }
     
     //setup add Map VIEW
     //-----------------------------------------------------
@@ -59,32 +59,45 @@
     //[radioButton setCircleRadius:12];
     //[radioButton setCircleStrokeWidth:5];
     //[radioButton_knockEvents setIndicatorColor:[UIColor greenColor]];
-
+    
     //[radioButton_knockEvents setIndicatorColor:[UIColor colorWithRed:0.290 green:0.278 blue:0.286 alpha:1.0]];
     
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    _radioButton = [DLRadioButton new];
-    NSArray *colorNames = @[@"Orange", @"Green", @"Cyon", @"Blue", @"Purple"];
-    NSArray *buttonColors = @[[UIColor orangeColor], [UIColor greenColor], [UIColor cyanColor], [UIColor blueColor], [UIColor purpleColor]];
-    NSInteger i = 0;
-    NSMutableArray *otherButtons = [NSMutableArray new];
-    for (UIColor *buttonColor in buttonColors)
+    NSArray *buttonArray = [[NSArray alloc] initWithArray:[_radioButton groupButtons]];
+    
+    
+    for (RadioButton *radioButton in buttonArray)
     {
-        // customize this button
-        DLRadioButton *radioButton = [[DLRadioButton alloc] initWithFrame:CGRectMake(30, 240+40*i, 200, 30)];
-        radioButton.buttonSideLength = 30;
-        [radioButton setTitle:[colorNames[i] stringByAppendingString:@" Button"] forState:UIControlStateNormal];
-        [radioButton setTitleColor:buttonColor forState:UIControlStateNormal];
-        radioButton.circleColor = buttonColor;
-        radioButton.indicatorColor = buttonColor;
-        radioButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-        [otherButtons addObject:radioButton];
+        [radioButton setImage:[UIImage imageNamed:@"unchecked"] forState:UIControlStateNormal];
+        [radioButton setImage:[UIImage imageNamed:@"checked"] forState:UIControlStateSelected];
+        [radioButton addTarget:self action:@selector(radioButtonValueChanged:) forControlEvents:UIControlEventValueChanged];
+        
         [self.view addSubview:radioButton];
-        i++;
-   }
+    }
+}
+
+- (void)radioButtonValueChanged:(RadioButton *)sender
+{
+    if (sender.tag == 1 && sender.selected)
+    {
+        NSLog(@"button 1 selected");
+    }
+    
+    else if (sender.tag == 2 && sender.selected)
+    {
+        NSLog(@"button 2 selected");
+    }
+    
+    else if (sender.tag == 3 && sender.selected)
+    {
+        NSLog(@"button 3 selected");
+    }
+    
+    
+
 }
 
 - (void)logOut
@@ -149,7 +162,7 @@
 
 - (IBAction)radioButtonPressed:(id)sender
 {
-       switch ([sender tag])
+    switch ([sender tag])
     {
         case 1:
             if (_button1_IS_pressed == YES)

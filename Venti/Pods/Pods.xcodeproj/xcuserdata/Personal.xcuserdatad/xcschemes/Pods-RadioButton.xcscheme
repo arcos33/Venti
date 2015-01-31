@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0B96128DD7134B58100E78FE"
-               BuildableName = "libPods-Google-Maps-iOS-SDK.a"
-               BlueprintName = "Pods-Google-Maps-iOS-SDK"
+               BlueprintIdentifier = "21C4B482A1FD78018B0D34FE"
+               BuildableName = "libPods-RadioButton.a"
+               BlueprintName = "Pods-RadioButton"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

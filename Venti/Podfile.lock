@@ -1,13 +1,16 @@
 PODS:
   - DLRadioButton (1.0.3)
   - Google-Maps-iOS-SDK (1.9.1)
+  - RadioButton (1.0)
 
 DEPENDENCIES:
   - DLRadioButton
   - Google-Maps-iOS-SDK (~> 1.9)
+  - RadioButton
 
 SPEC CHECKSUMS:
   DLRadioButton: 22c85b7d6eaca5fc5f7ad8366bf5fd5c2f7025df
   Google-Maps-iOS-SDK: 25fa3c054c74a7dcb82e3ef38224cfa6b66c9344
+  RadioButton: 694b2eec7af41a88ae4dc8c7a638980918e46216
 
 COCOAPODS: 0.35.0

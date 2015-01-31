@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "MapViewController.h"
-#import "DLRadioButton.h"
+#import "RadioButton.h"
 
 @interface HomePageViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 {
@@ -19,7 +19,7 @@
     
 }
 - (IBAction)radioButtonPressed:(id)sender;
-@property (nonatomic) DLRadioButton *radioButton;
+@property (nonatomic) IBOutlet RadioButton *radioButton;
 
 
 @end
