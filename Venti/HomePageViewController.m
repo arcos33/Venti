@@ -14,9 +14,10 @@
 @interface HomePageViewController ()
 
 @property (nonatomic) MapViewController *mapVC;
-@property (nonatomic, strong) NSString *selectedView;
-@property (nonatomic, strong) UIButton *profilePictureButton;
+@property (nonatomic) NSString *selectedView;
+@property (nonatomic) UIButton *profilePictureButton;
 @property (nonatomic) BOOL button1_IS_pressed;
+@property (nonatomic) CustomerSnapshotViewController *customerSnapshotVC;
 @end
 
 @implementation HomePageViewController
@@ -160,47 +161,15 @@
 }
 
 
-- (IBAction)radioButtonPressed:(id)sender
+- (IBAction)newKnock:(id)sender {
+}
+
+- (IBAction)noThanks:(id)sender {
+}
+
+- (IBAction)newAppointment:(id)sender
 {
-    switch ([sender tag])
-    {
-        case 1:
-            if (_button1_IS_pressed == YES)
-            {
-                NSLog(@"Button 1 NOT pressed");
-                _button1_IS_pressed = NO;
-                //[radioButton setSelected:NO];
-            }
-            
-            else
-            {
-                NSLog(@"Button 1 IS pressed");
-                _button1_IS_pressed = YES;
-                //[radioButton setSelected:YES];
-            }
-            break;
-        case 2:
-            if (_button1_IS_pressed == YES)
-            {
-                NSLog(@"Button 2 NOT pressed");
-                _button1_IS_pressed = NO;
-                //[radioButton setSelected:NO];
-            }
-            
-            else
-            {
-                NSLog(@"Button 2 IS pressed");
-                _button1_IS_pressed = YES;
-                //[radioButton setSelected:YES];
-            }
-            break;
-        case 3:
-            NSLog(@"Button 3 pressed");
-            break;
-            
-        default:
-            NSLog(@"Default message here");
-            break;
-    }
+    _customerSnapshotVC = [[CustomerSnapshotViewController alloc] initWithNibName:@"CustomerSnapshotViewController" bundle:nil];
+    [mapView addSubview:_customerSnapshotVC.view];
 }
 @end

@@ -10,4 +10,6 @@
 
 @interface CustomerSnapshotViewController : UIViewController
 
+- (IBAction)dismissView:(id)sender;
+
 @end

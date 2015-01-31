@@ -34,4 +34,7 @@
 }
 */
 
+- (IBAction)dismissView:(id)sender {
+    [self.view removeFromSuperview];
+}
 @end

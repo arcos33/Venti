@@ -163,16 +163,28 @@
                     <state key="normal" backgroundImage="create_user">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="newAppointment:" destination="-1" eventType="touchUpInside" id="FAB-gD-gLo"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufd-cp-t5a">
                     <rect key="frame" x="5" y="8" width="75" height="87"/>
                     <state key="normal" backgroundImage="knock_icon_blue">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="newKnock:" destination="-1" eventType="touchUpOutside" id="x7i-ZM-9Ie"/>
+                    </connections>
                 </button>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="no_thanks_large" translatesAutoresizingMaskIntoConstraints="NO" id="8DK-Qv-sm1">
-                    <rect key="frame" x="17" y="128" width="50" height="50"/>
-                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hh-0W-avE">
+                    <rect key="frame" x="18" y="120" width="60" height="60"/>
+                    <state key="normal" title="Button" image="no_thanks_large">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="noThanks:" destination="-1" eventType="touchUpInside" id="ArY-Fw-Tyj"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

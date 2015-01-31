@@ -139,10 +139,10 @@
 			children = (
 				60BDADA51A0B45660042FF22 /* HomePageViewController.h */,
 				60BDADA61A0B45660042FF22 /* HomePageViewController.m */,
+				6002EE011A74AAC3004BFA4E /* HomePageViewController.xib */,
 				60D429551A7CC859007D4FB5 /* CustomerSnapshotViewController.h */,
 				60D429561A7CC859007D4FB5 /* CustomerSnapshotViewController.m */,
 				60D429571A7CC859007D4FB5 /* CustomerSnapshotViewController.xib */,
-				6002EE011A74AAC3004BFA4E /* HomePageViewController.xib */,
 				6002EDFC1A749F63004BFA4E /* MapViewController.h */,
 				6002EDFD1A749F63004BFA4E /* MapViewController.m */,
 				6002EDFE1A749F63004BFA4E /* MapViewController.xib */,
