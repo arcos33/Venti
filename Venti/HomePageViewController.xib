@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -24,23 +24,23 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8v-15-CAy">
-                    <rect key="frame" x="23" y="149" width="50" height="50"/>
-                    <state key="normal" backgroundImage="knock_icon_white">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7o-sM-jX1">
-                    <rect key="frame" x="24" y="266" width="50" height="50"/>
-                    <state key="normal" backgroundImage="follow_up_icon">
+                    <rect key="frame" x="30" y="166" width="50" height="60"/>
+                    <state key="normal" image="create_user">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="newAppointment:" destination="-1" eventType="touchUpInside" id="wLv-J3-aFG"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toD-ai-NgB">
-                    <rect key="frame" x="28" y="403" width="50" height="50"/>
+                    <rect key="frame" x="29" y="271" width="50" height="50"/>
                     <state key="normal" backgroundImage="appointments_icon">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="createNewAppointment:" destination="-1" eventType="touchUpInside" id="fP6-BP-bMR"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcq-Mv-VXI">
                     <rect key="frame" x="19" y="546" width="65" height="45"/>
@@ -78,20 +78,8 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Knock Events" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTL-0B-NS9">
-                    <rect key="frame" x="16" y="202" width="71" height="14"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Come Back" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oit-rn-RKc">
-                    <rect key="frame" x="19" y="318" width="60" height="14"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Appointments" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6d-2M-j7A">
-                    <rect key="frame" x="13" y="456" width="72" height="14"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Customer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oit-rn-RKc">
+                    <rect key="frame" x="16" y="229" width="77" height="14"/>
                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -127,7 +115,7 @@
                     </state>
                 </button>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPs-tF-0Z0" customClass="RadioButton">
-                    <rect key="frame" x="39" y="218" width="24" height="24"/>
+                    <rect key="frame" x="153" y="8" width="24" height="24"/>
                     <state key="normal" image="checked">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -135,14 +123,8 @@
                         <outletCollection property="groupButtons" destination="3aP-1m-x48" id="c43-8k-i6i"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoA-kd-YLT" customClass="RadioButton">
-                    <rect key="frame" x="39" y="478" width="24" height="24"/>
-                    <state key="normal" title="Button 3" image="checked">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
                 <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aP-1m-x48" customClass="RadioButton">
-                    <rect key="frame" x="39" y="340" width="24" height="24"/>
+                    <rect key="frame" x="216" y="8" width="24" height="24"/>
                     <state key="normal" image="checked">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -150,25 +132,34 @@
                         <outletCollection property="groupButtons" destination="aoA-kd-YLT" id="KUH-do-ntP"/>
                     </connections>
                 </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoA-kd-YLT" customClass="RadioButton">
+                    <rect key="frame" x="277" y="8" width="24" height="24"/>
+                    <state key="normal" title="Button 3" image="checked">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Appointment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6d-2M-j7A">
+                    <rect key="frame" x="15" y="342" width="72" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p73-gS-pvP">
+                    <rect key="frame" x="39" y="328" width="23" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="0.56321957236842102" blue="0.92069284539473684" alpha="1" colorSpace="calibratedRGB"/>
             <point key="canvasLocation" x="46" y="88"/>
         </view>
         <view contentMode="scaleToFill" id="i3i-nl-lye" userLabel="ShortcutsView">
-            <rect key="frame" x="0.0" y="0.0" width="87" height="300"/>
+            <rect key="frame" x="0.0" y="0.0" width="87" height="271"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYA-bi-tFU">
-                    <rect key="frame" x="23" y="219" width="50" height="60"/>
-                    <state key="normal" backgroundImage="create_user">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="newAppointment:" destination="-1" eventType="touchUpInside" id="FAB-gD-gLo"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufd-cp-t5a">
-                    <rect key="frame" x="5" y="8" width="75" height="87"/>
+                    <rect key="frame" x="5" y="-1" width="75" height="87"/>
                     <state key="normal" backgroundImage="knock_icon_blue">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -177,7 +168,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hh-0W-avE">
-                    <rect key="frame" x="18" y="120" width="60" height="60"/>
+                    <rect key="frame" x="18" y="111" width="60" height="60"/>
                     <state key="normal" title="Button" image="no_thanks_large">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -185,20 +176,25 @@
                         <action selector="noThanks:" destination="-1" eventType="touchUpInside" id="ArY-Fw-Tyj"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bu-Ai-zwV">
+                    <rect key="frame" x="18" y="196" width="50" height="50"/>
+                    <state key="normal" image="come_back_later">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="539.5" y="175"/>
+            <point key="canvasLocation" x="539.5" y="169.5"/>
         </view>
     </objects>
     <resources>
         <image name="appointments_icon" width="256" height="227"/>
         <image name="checked" width="24" height="24"/>
         <image name="cleaning_supplies" width="460" height="288"/>
+        <image name="come_back_later" width="50" height="50"/>
         <image name="create_user" width="256" height="316"/>
-        <image name="follow_up_icon" width="101" height="101"/>
         <image name="knock_icon_blue" width="75" height="87"/>
-        <image name="knock_icon_white" width="92" height="91"/>
         <image name="log_out_icon" width="167" height="221"/>
         <image name="no_thanks_large" width="300" height="300"/>
         <image name="services_icon" width="249" height="306"/>

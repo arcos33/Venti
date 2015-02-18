@@ -28,6 +28,8 @@
 		60994BA21A2B099900BB8D38 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60994BA01A2B099900BB8D38 /* ForgotPasswordViewController.m */; };
 		60994BA31A2B099900BB8D38 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60994BA11A2B099900BB8D38 /* ForgotPasswordViewController.xib */; };
 		60994BA41A2B716D00BB8D38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60BDAD8C1A0B42640042FF22 /* Images.xcassets */; };
+		60A2791D1A832BE700E4D413 /* NewCustomerWizardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A2791B1A832BE700E4D413 /* NewCustomerWizardViewController.m */; };
+		60A2791E1A832BE700E4D413 /* NewCustomerWizardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60A2791C1A832BE700E4D413 /* NewCustomerWizardViewController.xib */; };
 		60BDAD7F1A0B42640042FF22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BDAD7E1A0B42640042FF22 /* main.m */; };
 		60BDAD821A0B42640042FF22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BDAD811A0B42640042FF22 /* AppDelegate.m */; };
 		60BDAD851A0B42640042FF22 /* Venti.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60BDAD831A0B42640042FF22 /* Venti.xcdatamodeld */; };
@@ -39,6 +41,8 @@
 		60CE7EC41A149A530087541E /* Mark Simonson - Proxima Nova Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60CE7EC31A149A530087541E /* Mark Simonson - Proxima Nova Regular.otf */; };
 		60D429581A7CC859007D4FB5 /* CustomerSnapshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D429561A7CC859007D4FB5 /* CustomerSnapshotViewController.m */; };
 		60D429591A7CC859007D4FB5 /* CustomerSnapshotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60D429571A7CC859007D4FB5 /* CustomerSnapshotViewController.xib */; };
+		60FBC5521A7E8C9E008BAC61 /* AppointmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FBC5501A7E8C9E008BAC61 /* AppointmentsViewController.m */; };
+		60FBC5531A7E8C9E008BAC61 /* AppointmentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60FBC5511A7E8C9E008BAC61 /* AppointmentsViewController.xib */; };
 		FAC0A8A80E9B9CE7C481C4FB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 683544C1DE51DDBB665C8E33 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +81,9 @@
 		60994B9F1A2B099900BB8D38 /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
 		60994BA01A2B099900BB8D38 /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
 		60994BA11A2B099900BB8D38 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		60A2791A1A832BE700E4D413 /* NewCustomerWizardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCustomerWizardViewController.h; sourceTree = "<group>"; };
+		60A2791B1A832BE700E4D413 /* NewCustomerWizardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCustomerWizardViewController.m; sourceTree = "<group>"; };
+		60A2791C1A832BE700E4D413 /* NewCustomerWizardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewCustomerWizardViewController.xib; sourceTree = "<group>"; };
 		60BDAD791A0B42640042FF22 /* Venti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BDAD7D1A0B42640042FF22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Venti/Info.plist; sourceTree = "<group>"; };
 		60BDAD7E1A0B42640042FF22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Venti/main.m; sourceTree = "<group>"; };
@@ -98,6 +105,9 @@
 		60D429551A7CC859007D4FB5 /* CustomerSnapshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerSnapshotViewController.h; sourceTree = "<group>"; };
 		60D429561A7CC859007D4FB5 /* CustomerSnapshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerSnapshotViewController.m; sourceTree = "<group>"; };
 		60D429571A7CC859007D4FB5 /* CustomerSnapshotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerSnapshotViewController.xib; sourceTree = "<group>"; };
+		60FBC54F1A7E8C9E008BAC61 /* AppointmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentsViewController.h; sourceTree = "<group>"; };
+		60FBC5501A7E8C9E008BAC61 /* AppointmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentsViewController.m; sourceTree = "<group>"; };
+		60FBC5511A7E8C9E008BAC61 /* AppointmentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppointmentsViewController.xib; sourceTree = "<group>"; };
 		683544C1DE51DDBB665C8E33 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0572FB036AC4899ED4ED73D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E4E589D397327CD05CC81D1C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,9 +150,15 @@
 				60BDADA51A0B45660042FF22 /* HomePageViewController.h */,
 				60BDADA61A0B45660042FF22 /* HomePageViewController.m */,
 				6002EE011A74AAC3004BFA4E /* HomePageViewController.xib */,
+				60FBC54F1A7E8C9E008BAC61 /* AppointmentsViewController.h */,
+				60FBC5501A7E8C9E008BAC61 /* AppointmentsViewController.m */,
+				60FBC5511A7E8C9E008BAC61 /* AppointmentsViewController.xib */,
 				60D429551A7CC859007D4FB5 /* CustomerSnapshotViewController.h */,
 				60D429561A7CC859007D4FB5 /* CustomerSnapshotViewController.m */,
 				60D429571A7CC859007D4FB5 /* CustomerSnapshotViewController.xib */,
+				60A2791A1A832BE700E4D413 /* NewCustomerWizardViewController.h */,
+				60A2791B1A832BE700E4D413 /* NewCustomerWizardViewController.m */,
+				60A2791C1A832BE700E4D413 /* NewCustomerWizardViewController.xib */,
 				6002EDFC1A749F63004BFA4E /* MapViewController.h */,
 				6002EDFD1A749F63004BFA4E /* MapViewController.m */,
 				6002EDFE1A749F63004BFA4E /* MapViewController.xib */,
@@ -383,9 +399,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60A2791E1A832BE700E4D413 /* NewCustomerWizardViewController.xib in Resources */,
 				6002EE021A74AAC3004BFA4E /* HomePageViewController.xib in Resources */,
 				60994BA41A2B716D00BB8D38 /* Images.xcassets in Resources */,
 				60BDAD901A0B42640042FF22 /* LaunchScreen.xib in Resources */,
+				60FBC5531A7E8C9E008BAC61 /* AppointmentsViewController.xib in Resources */,
 				60994BA31A2B099900BB8D38 /* ForgotPasswordViewController.xib in Resources */,
 				60D429591A7CC859007D4FB5 /* CustomerSnapshotViewController.xib in Resources */,
 				6002EE001A749F63004BFA4E /* MapViewController.xib in Resources */,
@@ -441,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60FBC5521A7E8C9E008BAC61 /* AppointmentsViewController.m in Sources */,
 				60BDAD851A0B42640042FF22 /* Venti.xcdatamodeld in Sources */,
 				60D429581A7CC859007D4FB5 /* CustomerSnapshotViewController.m in Sources */,
 				60994B9D1A2AE69D00BB8D38 /* RegistrationViewController.m in Sources */,
@@ -449,6 +468,7 @@
 				60BDADA81A0B45660042FF22 /* HomePageViewController.m in Sources */,
 				60BE478E1A26F6480047ABB7 /* Knock_Event.m in Sources */,
 				60994BA21A2B099900BB8D38 /* ForgotPasswordViewController.m in Sources */,
+				60A2791D1A832BE700E4D413 /* NewCustomerWizardViewController.m in Sources */,
 				6002EDFF1A749F63004BFA4E /* MapViewController.m in Sources */,
 				60BDAD7F1A0B42640042FF22 /* main.m in Sources */,
 				6038FD5C1A0DF9E6009F033D /* LoginViewController.m in Sources */,

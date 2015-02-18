@@ -23,6 +23,7 @@
 - (IBAction)newKnock:(id)sender;
 - (IBAction)noThanks:(id)sender;
 - (IBAction)newAppointment:(id)sender;
+- (IBAction)createNewAppointment:(id)sender;
 
 
 @end

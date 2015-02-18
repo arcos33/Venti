@@ -10,6 +10,7 @@
 #import <math.h>
 #import "Knock_Event.h"
 #import "CoreDataManager.h"
+#import "AppointmentsViewController.h"
 
 @interface HomePageViewController ()
 
@@ -18,6 +19,7 @@
 @property (nonatomic) UIButton *profilePictureButton;
 @property (nonatomic) BOOL button1_IS_pressed;
 @property (nonatomic) CustomerSnapshotViewController *customerSnapshotVC;
+@property (nonatomic) AppointmentsViewController *appointmentsVC;
 @end
 
 @implementation HomePageViewController
@@ -171,5 +173,12 @@
 {
     _customerSnapshotVC = [[CustomerSnapshotViewController alloc] initWithNibName:@"CustomerSnapshotViewController" bundle:nil];
     [mapView addSubview:_customerSnapshotVC.view];
+}
+
+- (IBAction)createNewAppointment:(id)sender
+{
+    _appointmentsVC = [[AppointmentsViewController alloc] initWithNibName:@"AppointmentsViewController" bundle:nil];
+    [mapView addSubview:_appointmentsVC.view];
+    [self.view setBackgroundColor:[UIColor darkGrayColor]];
 }
 @end
